@@ -15,7 +15,7 @@ module MongoDoc
       end
 
       def destroyed?
-        @_id.nil?
+        _id.nil?
       end
       
       def errors
