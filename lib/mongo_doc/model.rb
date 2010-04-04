@@ -1,12 +1,12 @@
-require 'model/active_model_compliance'
+require 'mongo_doc/model/active_model_compliance'
 
 module MongoDoc
   module Model
-    def self.included(document_class)
-      document_class.class_eval %{
+    def self.included(klass)
+      klass.class_eval do
         include MongoDoc::Document
         include MongoDoc::Model::ActiveModelCompliance
-      }
+      end
     end
   end
 end

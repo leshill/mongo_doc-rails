@@ -1,1 +1,1 @@
-require 'model'
+require 'mongo_doc/model'
