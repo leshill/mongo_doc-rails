@@ -24,10 +24,6 @@ describe MongoDoc::Model do
     it "responds to #valid?" do
       should respond_to(:valid?)
     end
-
-    it "always returns true" do
-      should be_valid
-    end
   end
 
   describe "#new_record?" do

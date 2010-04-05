@@ -9,7 +9,8 @@ begin
     gem.email = "elliot.cm@gmail.com, leshill@gmail.com"
     gem.homepage = "http://github.com/elliotcm/mongo_doc-rails"
     gem.authors = ["Elliot Crosby-McCullough, Les Hill"]
-    gem.add_dependency "mongo_doc", ">=0.4.3"
+    gem.add_dependency "mongo_doc", ">=0.5.0"
+    gem.add_dependency "activemodel", ">=3.0.0.beta"
     gem.add_development_dependency "rspec", "= 1.3.0"
   end
   Jeweler::GemcutterTasks.new
