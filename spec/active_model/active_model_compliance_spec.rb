@@ -1,10 +1,10 @@
 require 'spec_helper'
 
 class ActiveModelComplianceTest
-  include MongoDoc::Model
+  include MongoDoc::ActiveModel
 end
 
-describe MongoDoc::Model do
+describe MongoDoc::ActiveModel do
   let(:model) { ActiveModelComplianceTest.new }
 
   describe "#to_param" do

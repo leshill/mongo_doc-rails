@@ -1,7 +1,7 @@
 require 'active_model'
 
 module MongoDoc
-  module Model
+  module ActiveModel
     module ActiveModelCompliance
       def destroyed?
         _id.nil?
@@ -9,8 +9,8 @@ module MongoDoc
 
       def self.included(klass)
         klass.class_eval do
-          include ActiveModel::Validations
-          extend ActiveModel::Naming
+          include ::ActiveModel::Validations
+          extend ::ActiveModel::Naming
         end
       end
     end
