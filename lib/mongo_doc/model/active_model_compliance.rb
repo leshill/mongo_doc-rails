@@ -2,7 +2,6 @@ require 'active_model'
 
 module MongoDoc
   module Model
-
     module ActiveModelCompliance
       def destroyed?
         _id.nil?
@@ -15,6 +14,5 @@ module MongoDoc
         end
       end
     end
-
   end
 end
