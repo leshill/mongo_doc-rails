@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 class ActiveModelComplianceTest
-  include MongoDoc::ActiveModel
+  include MongoDoc::Document
 end
 
 describe MongoDoc::ActiveModel do
