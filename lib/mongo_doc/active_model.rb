@@ -1,4 +1,5 @@
 require 'mongo_doc/active_model/active_model_compliance'
+require 'mongo_doc/active_model/validations'
 
 module MongoDoc
   module ActiveModel
@@ -8,6 +9,7 @@ module MongoDoc
       klass.class_eval do
         include MongoDoc::Document
         include MongoDoc::ActiveModel::ActiveModelCompliance
+        extend MongoDoc::ActiveModel::Validations::ClassMethods
       end
     end
   end
