@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{mongo_doc-rails}
-  s.version = "0.2.0"
+  s.version = "0.2.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Elliot Crosby-McCullough, Les Hill"]
@@ -16,14 +16,17 @@ Gem::Specification.new do |s|
     "README.md"
   ]
   s.files = [
-    "README.md",
+    ".gitignore",
+     "README.md",
      "Rakefile",
      "VERSION",
      "lib/mongo_doc-rails.rb",
      "lib/mongo_doc/active_model.rb",
      "lib/mongo_doc/active_model/active_model_compliance.rb",
+     "lib/mongo_doc/active_model/validations.rb",
      "mongo_doc-rails.gemspec",
      "spec/active_model/active_model_compliance_spec.rb",
+     "spec/active_model/validations_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"
   ]
@@ -34,6 +37,7 @@ Gem::Specification.new do |s|
   s.summary = %q{Rails 3 integration for MongoDoc}
   s.test_files = [
     "spec/active_model/active_model_compliance_spec.rb",
+     "spec/active_model/validations_spec.rb",
      "spec/spec_helper.rb"
   ]
 
