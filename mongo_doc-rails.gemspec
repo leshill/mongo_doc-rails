@@ -22,6 +22,7 @@ Gem::Specification.new do |s|
      "lib/mongo_doc-rails.rb",
      "lib/mongo_doc/active_model.rb",
      "lib/mongo_doc/active_model/active_model_compliance.rb",
+     "mongo_doc-rails.gemspec",
      "spec/active_model/active_model_compliance_spec.rb",
      "spec/spec.opts",
      "spec/spec_helper.rb"
